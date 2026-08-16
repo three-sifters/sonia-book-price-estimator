@@ -1,0 +1,16 @@
+html {
+  font-size: 3em;
+}
+
+input[type="number"] {
+  width: 8ch;
+  font-size: inherit;
+}
+
+select {
+  font-size: inherit;
+}
+
+.output {
+  font-weight: bold;
+}

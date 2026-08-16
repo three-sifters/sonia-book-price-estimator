@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Price estimator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="main.js"></script>
+  </head>
+  <body>
+    A book with
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="100"
+      name="page-count"
+      id="page-count"
+    />
+    <select name="book-type" id="book-type">
+      <option value="standard" selected>standard-sized</option>
+      <option value="large">large</option>
+      large</select
+    >,
+    <select name="book-color" id="book-color">
+      <option value="grayscale" selected>black-and-white</option>
+      <option value="color">color</option>
+    </select>
+    pages will cost
+    <span id="per-book-cost" class="output"
+      ><span class="sign"></span>$<span class="dollars">2</span>.<span
+        class="cents"
+        >30</span
+      ></span
+    >
+    to print.
+    <br />
+    <br />
+    Assuming that the book would "sell"
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="300"
+      name="free-count"
+      id="free-count"
+    />
+    copies if it was free, but at a price of $<input
+      type="number"
+      min="0"
+      step="0.01"
+      value="100"
+      name="max-price"
+      id="max-price"
+    />
+    or above it would sell no copies, at a sale price of $<input
+      type="number"
+      min="0"
+      step="0.01"
+      value="10"
+      name="unit-price"
+      id="unit-price"
+    />
+    each this calculator estimates that it would sell
+    <span id="copies-bought" class="output">270</span> copies.
+    <br />
+    <br />
+    At this price, the book would sell for a profit of
+    <span id="unit-profit" class="output"
+      ><span class="sign"></span>$<span class="dollars">7</span>.<span
+        class="cents"
+        >70</span
+      ></span
+    >, yielding a total net profit of
+    <span id="total-profit" class="output"
+      ><span class="sign"></span>$<span class="dollars">2079</span>.<span
+        class="cents"
+        >00</span
+      ></span
+    >.
+  </body>
+</html>
